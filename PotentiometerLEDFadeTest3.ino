@@ -65,7 +65,7 @@ Vector3Int GetLedVector2(int input)
   input = constrain(input, 0, 1023);
 
   return Vector3Int(
-    (int)GetRedLEDValue(input),
+    GetRedLEDValue(input),
     GetGreenLEDValue(input),
     GetBlueLEDValue(input)
   );
